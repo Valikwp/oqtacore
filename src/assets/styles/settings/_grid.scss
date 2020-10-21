@@ -1,0 +1,91 @@
+.site-width {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1230px;
+
+  @include phone-991 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+
+
+}
+
+.col {
+  padding-right: 15px;
+  padding-left: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  @include phone-991 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+
+}
+
+.phone-show {
+  display: none;
+  @include phone-991 {
+    display: block;
+  }
+}
+
+.phone-hide {
+  display: block;
+  @include phone-991 {
+    display: none;
+  }
+}
+
+.phone-show-imp {
+  display: none !important;
+  @include phone-991 {
+    display: block !important;
+  }
+}
+
+.phone-hide-imp {
+  display: block !important;
+  @include phone-991 {
+    display: none !important;
+  }
+}
+
+.phone-show-flex {
+  display: none;
+  @include phone-991 {
+    display: flex;
+  }
+}
+
+.phone-hide-flex {
+  display: flex;
+  @include phone-991 {
+    display: none;
+  }
+}
+
+.phone-show-flex-imp {
+  display: none !important;
+  @include phone-991 {
+    display: flex !important;
+  }
+}
+
+.phone-hide-flex-imp {
+  display: flex !important;
+  @include phone-991 {
+    display: none !important;
+  }
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/oqtacore/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/oqtacore/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/oqtacore/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/oqtacore/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/facade/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/facade/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/facade/ignition-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/fideloper/proxy" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/fruitcake/laravel-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/scrivo/highlight.php" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/http-client-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-php70" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/oqtacore/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="myvn" />
+  </component>
+</module>

@@ -1,0 +1,41 @@
+// Responsive breakpoints. "Include media" settings.
+
+
+$desktop-block: 1170px;
+$phone-1000: 1000px;
+$phone-991: 991px;
+$phone-660: 660px;
+$phone-560: 560px;
+$phone-374: 374px;
+
+@mixin desktop-block {
+  @media screen and (max-width: $desktop-block) {
+    @content;
+  }
+}
+@mixin phone-1000 {
+  @media screen and (max-width: $phone-1000) {
+    @content;
+  }
+}
+@mixin phone-991 {
+  @media screen and (max-width: $phone-991) {
+    @content;
+  }
+}
+@mixin phone-660 {
+  @media screen and (max-width: $phone-660) {
+    @content;
+  }
+}
+@mixin phone-560 {
+  @media screen and (max-width: $phone-560) {
+    @content;
+  }
+}
+@mixin phone-374 {
+  @media screen and (max-width: $phone-374) {
+    @content;
+  }
+}
+
