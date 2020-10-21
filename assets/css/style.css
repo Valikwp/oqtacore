@@ -919,6 +919,24 @@ header .header-bottom .header-bottom-link ul li:last-child:after {
   }
 }
 
+.sidebar-medforum {
+  border: 1px solid #d5d5d5;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+.sidebar-medforum-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Open Sans Semibold", sans-serif;
+}
+
+.sidebar-medforum-title span {
+  color: #1289c0;
+}
+
 .sidebar-new-item {
   padding-top: 6px;
   padding-bottom: 10px;
