@@ -317,12 +317,44 @@ input {
   height: 85px;
   width: 100%;
   background-color: #070546;
+  position: relative;
+}
+
+.header::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icon/custom-back-1.svg);
+}
+
+.header:after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icon/custom-back-1.svg);
 }
 
 .header .col-logo {
   height: 85px;
   display: flex;
   align-items: center;
+}
+
+.header .header-block-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .header-block-menu li {
+  padding-left: 60px;
+}
+
+.header .header-block-menu li a {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header .header-block-menu .active a {
+  font-weight: 600;
 }
 
 .footer {
