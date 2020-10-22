@@ -269,7 +269,7 @@ a {
 }
 
 .col-content {
-  max-width: calc(100% - 335px);
+  max-width: 100%;
   padding-left: 7.5px;
   padding-right: 7.5px;
 }
