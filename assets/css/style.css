@@ -217,30 +217,10 @@ a {
 }
 
 .h1 {
-  font-size: 54px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  line-height: 64px;
-  letter-spacing: 0.02em;
-}
-
-@media screen and (max-width: 991px) {
-  .h1 {
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
-
-.h1.h1-page {
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 18px;
-}
-
-@media screen and (max-width: 991px) {
-  .h1.h1-page {
-    font-size: 24px;
-  }
+  line-height: 84px;
 }
 
 .h2 {
@@ -381,22 +361,30 @@ input {
   position: absolute;
   content: "";
   background-image: url(../images/icon/custom-back-3.svg);
-  width: 111px;
-  height: 85px;
-  right: 15px;
-  top: 0;
-  opacity: 0.15;
+  width: 124px;
+  height: 175px;
+  left: 0px;
+  bottom: 0;
 }
 
 .index-header:after {
   position: absolute;
   content: "";
   background-image: url(../images/icon/custom-back-4.svg);
-  width: 111px;
-  height: 85px;
-  right: 15px;
-  top: 0;
-  opacity: 0.15;
+  width: 149px;
+  height: 25px;
+  right: 0;
+  top: 69px;
+}
+
+.index-header-block {
+  margin-top: 100px;
+}
+
+.index-header-block-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 56px;
 }
 
 .footer {
