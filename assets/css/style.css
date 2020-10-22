@@ -64,36 +64,22 @@ html {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  max-width: 1230px;
-}
-
-@media screen and (max-width: 991px) {
-  .site-width {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
+  max-width: 1440px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -8.5px;
+  margin-left: -8.5px;
 }
 
 .col {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 8.5px;
+  padding-left: 8.5px;
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
-}
-
-@media screen and (max-width: 991px) {
-  .col {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 
 .phone-show {
@@ -203,7 +189,7 @@ body {
       overscroll-behavior: none;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .active-form {
