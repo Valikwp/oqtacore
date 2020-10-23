@@ -1,9 +1,19 @@
 header.header
-    .header-top
+    .header-block
         .site-width
             .row
                 .col.col-logo
                     .block-logo
                         a.block-logo-link(href='/')
-                            +img('logo.png')
+                            +img('logo.svg')
                 .col.col-right
+                    ul.header-block-menu
+                        li.active
+                            a(href="#")
+                                | Blog
+                        li
+                            a(href="#")
+                                | Cases
+                        li
+                            a(href="#")
+                                | Calculator

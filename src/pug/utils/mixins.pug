@@ -1,8 +1,14 @@
 mixin icon(width, height, name)
 		svg(width="" + width + "" height="" + height + "" class="svg-sprite-icon icon-" + name)
 			use(xlink:href="assets/images/sprite.svg#" + name)
-mixin img(src, classadd)
+mixin img(src, set, classadd)
 	if(classadd)
-		img(class="img " + classadd + "" src="assets/images/" + src +""  alt="")
+		if(set)
+			img(class="img " + classadd + "" src="assets/images/" + src +"" srcset="assets/images/" + set +""  alt="")
+		else
+			img(class="img " + classadd + "" src="assets/images/" + src +""  alt="")
 	else
-		img(class="img" src="assets/images/" + src +""  alt="")
+		if(set)
+			img(class="img" src="assets/images/" + src +"" srcset="assets/images/" + set +""  alt="")
+		else
+			img(class="img" src="assets/images/" + src +""  alt="")

@@ -26,8 +26,8 @@ body {
   overscroll-behavior: none;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  font-size: 14px;
-  color: $main-color;
+  font-size: 20px;
+  color: $color-text;
 
 }
 
@@ -60,43 +60,26 @@ p {
 }
 
 .h1 {
-  font-size: 54px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 600;
   font-family: $font;
-  line-height: 64px;
-  letter-spacing: 0.02em;
-  @include phone-991 {
-    font-size: 24px;
-    line-height: 29px;
-  }
+  line-height: 84px;
+
+
 }
 
-.h1.h1-page {
-  font-size: 24px;
-
-  font-family: $font-bold;
-  line-height: 18px;
-
-  @include phone-991 {
-    font-size: 24px;
-
-  }
-}
 
 .h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-family: $font-bold;
-  line-height: 18px;
-  @include phone-991 {
-
-  }
+  font-size: 32px;
+  line-height: 45px;
+  padding-bottom: 5px;
 }
 
 .h3 {
-  font-family: $font-bold;
-  font-size: 18px;
-  line-height: 18px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+  padding-bottom: 10px;
 }
 
 .row-content {
@@ -109,7 +92,7 @@ p {
 }
 
 .col-content {
-  max-width: calc(100% - 335px);
+  max-width: 100%;
   padding-left: 7.5px;
   padding-right: 7.5px;
   @include phone-991 {
@@ -118,7 +101,6 @@ p {
     max-width: 100%;
   }
 }
-
 
 
 .col-sidebar {
@@ -143,31 +125,35 @@ p {
 
 }
 
-.back_to_top {
-position: fixed;
-  background-image: url(../images/icon/top.png);
-  width: 70px;
-  height: 70px;
-  bottom: 50px;
-  right: 50px;
-  display: none;
+button, .button {
+  background-color: $back-button;
+  position: relative;
+  height: 67px;
   cursor: pointer;
-}
-.back_to_top-show {
-  display: block;
+  font-weight: 500;
+  color: $color-white;
+  font-size: 20px;
+  line-height: 28px;
+  border: 2px solid #00B496;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 0;
+
 }
 
 input {
-  background-color: $back-input;
-  border: none;
-  height: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-size: 15px;
-  @include phone-991 {
 
-  }
-  @include phone-374 {
+  border: 1px solid rgba(2, 56, 119, 0.3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 67px;
+  color: $color-input;
+  font-size: 17px;
+  line-height: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
 
+  &::placeholder {
+    opacity: 0.5;
   }
 }

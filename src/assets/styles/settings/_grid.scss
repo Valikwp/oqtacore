@@ -3,35 +3,26 @@
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  max-width: 1230px;
+  max-width: 1440px;
 
-  @include phone-991 {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
+
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -8.5px;
+  margin-left: -8.5px;
 
 
 }
 
 .col {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 8.5px;
+  padding-left: 8.5px;
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
-  @include phone-991 {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-
 }
 
 .phone-show {
