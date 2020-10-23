@@ -492,6 +492,7 @@
     position: relative;
     &-form {
       margin-top: 10px;
+      display: flex;
       button {
         width: 205px;
         border-top-left-radius: 0;
