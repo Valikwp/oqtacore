@@ -451,10 +451,8 @@ input::placeholder {
   width: 100%;
   height: 100%;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   z-index: 111;
-  background: #0b0949 none repeat scroll 0% 0%;
 }
 
 .index-header {
