@@ -64,6 +64,14 @@ p {
   font-weight: 600;
   font-family: $font;
   line-height: 84px;
+  @include desktop-block-1400 {
+    font-size: 48px;
+    line-height: 67px;
+  }
+  @include phone-1023 {
+    font-size: 30px;
+    line-height: 42px;
+  }
 
 
 }
@@ -73,6 +81,10 @@ p {
   font-size: 32px;
   line-height: 45px;
   padding-bottom: 5px;
+  @include phone-1023 {
+    font-size: 26px;
+    line-height: 37px;
+  }
 }
 
 .h3 {
@@ -80,26 +92,28 @@ p {
   font-size: 30px;
   line-height: 42px;
   padding-bottom: 10px;
+  @include desktop-block-1400 {
+    font-size: 24px;
+    line-height: 34px;
+    padding-bottom: 4px;
+  }
+  @include phone-1023 {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .row-content {
   margin-left: -7.5px;
   margin-right: -7.5px;
-  @include phone-991 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
+
 }
 
 .col-content {
   max-width: 100%;
   padding-left: 7.5px;
   padding-right: 7.5px;
-  @include phone-991 {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 100%;
-  }
+
 }
 
 
@@ -107,11 +121,7 @@ p {
   max-width: 335px;
   padding-left: 7.5px;
   padding-right: 7.5px;
-  @include phone-991 {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: none;
-  }
+
 }
 
 .text-center {
@@ -138,6 +148,11 @@ button, .button {
   box-sizing: border-box;
   border-radius: 6px;
   padding: 0;
+  @include desktop-block-1400 {
+    height: 43px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 
 }
 
@@ -152,6 +167,14 @@ input {
   line-height: 24px;
   padding-left: 20px;
   padding-right: 20px;
+  @include desktop-block-1400 {
+    height: 43px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  @include phone-1023 {
+    height: 51px;
+  }
 
   &::placeholder {
     opacity: 0.5;

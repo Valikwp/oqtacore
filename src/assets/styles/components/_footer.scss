@@ -2,6 +2,9 @@
   margin-top: 50px;
   position: relative;
   overflow: hidden;
+  @include desktop-block-1400 {
+    margin-top: 40px;
+  }
 
   &-top {
     border-top: 1px solid #D7D9E4;
@@ -9,9 +12,17 @@
     position: relative;
     background-color: $back-white;
     padding-bottom: 24px;
+    @include phone-1023 {
+      padding-top: 30px;
+      padding-bottom: 0px;
+    }
 
     &-col-1 {
       max-width: 22%;
+      @include desktop-block-1400 {
+        flex-basis: 83px;
+        max-width: 25%;
+      }
     }
 
     &-col-2 {
@@ -20,34 +31,82 @@
 
     &-col-3 {
       max-width: 23%;
+      @include desktop-block-1400 {
+        max-width: 26%;
+      }
     }
 
     &-col-4 {
       margin-left: 207px;
+      @include desktop-block-1400 {
+        margin-left: 30px;
+      }
+    }
+
+    .col {
+      @include phone-1023 {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-left: 0;
+      }
     }
 
     &-logo-soc {
+      &-logo {
+        img {
+          @include phone-1023 {
+            max-height: 17px;
+          }
+        }
+      }
+
       &-soc {
         display: flex;
         margin-left: -9px;
-        margin-right: -9px;
+        margin-right: -9x;
         margin-top: 30px;
+        @include desktop-block-1400 {
+          margin-left: -13px;
+          margin-right: -13x;
+          margin-top: 20px;
+        }
 
         li {
           margin-left: 9px;
           margin-right: 9px;
+          @include desktop-block-1400 {
+            margin-left: 13px;
+            margin-right: 13px;
+          }
+
+          img {
+            @include desktop-block-1400 {
+              width: 32px;
+              height: 32px;
+            }
+          }
         }
       }
     }
 
     &-menu {
+      @include phone-1023 {
+        display: none;
+      }
       li {
         display: block;
         margin-bottom: 3px;
+        @include desktop-block-1400 {
+          margin-bottom: 6px;
+        }
 
         a {
           font-size: 18px;
           line-height: 25px;
+          @include desktop-block-1400 {
+            font-size: 16px;
+            line-height: 22px;
+          }
 
           &:hover {
             text-decoration: underline;
@@ -66,6 +125,15 @@
       position: relative;
       font-size: 18px;
       line-height: 25px;
+      @include desktop-block-1400 {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      @include phone-1023 {
+        padding-left: 22px;
+        margin-top: 25px;
+        max-width: 293px;
+      }
 
       &:before {
         position: absolute;
@@ -75,11 +143,22 @@
         height: 30px;
         left: -29px;
         top: 5px;
+        @include phone-1023 {
+          left: 0px;
+          top: 0px;
+          width: 14px;
+          height: 22px;
+          background-size: cover;
+        }
       }
     }
 
     &-phones {
       position: relative;
+      @include phone-1023 {
+        padding-left: 27px;
+        margin-top: 24px;
+      }
 
       &:before {
         position: absolute;
@@ -89,19 +168,43 @@
         height: 29px;
         left: -39px;
         top: 3px;
+        @include phone-1023 {
+          width: 20px;
+          height: 20px;
+          background-size: cover;
+          left: 0;
+          top: 7px;
+        }
       }
 
       &-item {
         display: block;
         font-size: 18px;
         line-height: 36px;
+        @include desktop-block-1400 {
+          font-size: 16px;
+          line-height: 32px;
+        }
+        @include phone-1023 {
+          line-height: 20px;
+          margin-bottom: 20px;
+        }
 
         a {
           font-weight: 500;
           padding-right: 5px;
+          @include phone-1023 {
+            display: block;
+          }
 
           &:hover {
             text-decoration: underline;
+          }
+        }
+
+        span {
+          @include desktop-block-1400 {
+            font-size: 14px;
           }
         }
 
@@ -122,30 +225,68 @@
     right: -3px;
     top: -110px;
     z-index: -1;
+    @include desktop-block-1560 {
+      content: none;
+    }
 
   }
+
   &-bottom {
     border-top: 1px solid #D7D9E4;
     padding-top: 24px;
     padding-bottom: 29px;
     margin-top: 24px;
+    @include phone-1023 {
+      margin-top: 6px;
+      padding-top: 16px;
+      padding-bottom: 13px;
+    }
+
     &-block {
       display: flex;
       justify-content: space-between;
+      @include phone-1023 {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
+
       &-left {
         font-size: 14px;
         line-height: 20px;
         opacity: 0.5;
+        @include phone-1023 {
+          width: 100%;
+          font-size: 10px;
+          line-height: 14px;
+        }
       }
+
       &-right {
         display: flex;
         justify-content: flex-end;
+        @include phone-1023 {
+          justify-content: flex-start;
+          margin-left: -13.5px;
+          margin-right: -13.5px;
+          margin-bottom: 9px;
+        }
+
         li {
           padding-left: 72px;
+          @include phone-1023 {
+            padding-left: 13.5px;
+            padding-right: 13.5px;
+          }
+
           a {
             font-size: 16px;
             line-height: 22px;
             opacity: 0.8;
+            @include phone-1023 {
+              font-size: 14px;
+              line-height: 20px;
+            }
+
             &:hover {
               text-decoration: underline;
             }

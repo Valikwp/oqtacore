@@ -22,7 +22,7 @@ mix.options({
 });
 
 
-//mix.js('src/assets/js/app.js', 'build/assets/js');
+mix.js('src/assets/js/app.js', 'build/assets/js');
 mix.copyDirectory('src/assets/fonts', 'build/assets/fonts');
 mix.copyDirectory('src/assets/images', 'build/assets/images');
 mix.copyDirectory('src/assets/favicon', 'build/assets/favicon');

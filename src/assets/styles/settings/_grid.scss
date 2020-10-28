@@ -4,6 +4,10 @@
   padding-right: 15px;
   padding-left: 15px;
   max-width: 1440px;
+  @include phone-1023 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
 
 }
@@ -27,56 +31,56 @@
 
 .phone-show {
   display: none;
-  @include phone-991 {
+  @include phone-1023 {
     display: block;
   }
 }
 
 .phone-hide {
   display: block;
-  @include phone-991 {
+  @include phone-1023 {
     display: none;
   }
 }
 
 .phone-show-imp {
   display: none !important;
-  @include phone-991 {
+  @include phone-1023 {
     display: block !important;
   }
 }
 
 .phone-hide-imp {
   display: block !important;
-  @include phone-991 {
+  @include phone-1023 {
     display: none !important;
   }
 }
 
 .phone-show-flex {
   display: none;
-  @include phone-991 {
+  @include phone-1023 {
     display: flex;
   }
 }
 
 .phone-hide-flex {
   display: flex;
-  @include phone-991 {
+  @include phone-1023 {
     display: none;
   }
 }
 
 .phone-show-flex-imp {
   display: none !important;
-  @include phone-991 {
+  @include phone-1023 {
     display: flex !important;
   }
 }
 
 .phone-hide-flex-imp {
   display: flex !important;
-  @include phone-991 {
+  @include phone-1023 {
     display: none !important;
   }
 }

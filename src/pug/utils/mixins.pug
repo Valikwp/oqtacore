@@ -12,3 +12,10 @@ mixin img(src, set, classadd)
 			img(class="img" src="assets/images/" + src +"" srcset="assets/images/" + set +""  alt="")
 		else
 			img(class="img" src="assets/images/" + src +""  alt="")
+mixin svg(src, classadd)
+	if(classadd)
+		img(class="img " + classadd + "" src="assets/images/" + src +""  alt="")
+	else
+
+		img(class="img" src="assets/images/" + src +""  alt="")
+

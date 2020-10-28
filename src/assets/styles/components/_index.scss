@@ -4,6 +4,9 @@
 
 .index-header {
   position: relative;
+  @include phone-1023 {
+    margin-bottom: 20px;
+  }
 
   &:before {
     position: absolute;
@@ -13,6 +16,9 @@
     height: 175px;
     left: 0px;
     bottom: 0;
+    @include desktop-block-1560 {
+      content: none;
+    }
   }
 
   &:after {
@@ -23,21 +29,63 @@
     height: 25px;
     right: 0;
     top: 69px;
+    @include desktop-block-1560 {
+      content: none;
+    }
   }
 
   &-block {
     margin-top: 100px;
+    @include desktop-block-1400 {
+      margin-top: 48px;
+    }
+    @include phone-1023 {
+      margin-top: 40px;
+    }
+
+    .h1 {
+      @include desktop-block-1400 {
+        padding-left: 32px;
+      }
+    }
 
     &-img {
       display: flex;
       justify-content: flex-end;
       margin-top: 56px;
+      @include desktop-block-1400 {
+        margin-top: 21px;
+      }
+
+      img {
+        width: 180px;
+      }
     }
   }
 }
 
 .search-category {
   margin-bottom: 24px;
+  @include phone-1023 {
+    margin-bottom: 20px;
+  }
+
+  .site-width {
+    @include phone-1023 {
+      padding: 0;
+    }
+
+    .row {
+      @include phone-1023 {
+        margin: 0;
+      }
+      .col {
+        @include phone-1023 {
+          padding: 0;
+        }
+      }
+    }
+  }
 
   &-block-wrap {
     position: relative;
@@ -51,6 +99,9 @@
       right: -72px;
       top: 48px;
       z-index: -1;
+      @include desktop-block-1560 {
+        content: none;
+      }
     }
   }
 
@@ -64,6 +115,12 @@
     position: relative;
     z-index: 1;
     background-color: $back-white;
+    @include phone-1023 {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 24px;
+    }
 
     &-search {
       max-width: 576px;
@@ -71,6 +128,14 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 10px;
+      @include desktop-block-1400 {
+        max-width: 547px;
+      }
+      @include phone-1023 {
+        max-width: 100%;
+        margin-bottom: 8px;
+
+      }
 
       input {
         width: 100%;
@@ -78,6 +143,12 @@
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+        @include desktop-block-1400 {
+          max-width: 443px;
+        }
+        @include phone-1023 {
+          max-width: calc(100% - 56px);
+        }
 
       }
 
@@ -88,6 +159,15 @@
         border-bottom-left-radius: 0;
         text-align: left;
         padding-left: 60px;
+        @include desktop-block-1400 {
+          max-width: 119px;
+          padding-left: 19px;
+        }
+        @include phone-1023 {
+          height: 51px;
+          width: 56px;
+
+        }
 
         &:after {
           position: absolute;
@@ -97,6 +177,19 @@
           height: 16px;
           top: calc(50% - 8px);
           margin-left: 32px;
+          @include desktop-block-1400 {
+            margin-left: 16px;
+          }
+          @include phone-1023 {
+            margin-left: -5px;
+          }
+        }
+
+        span {
+          @include phone-1023 {
+            display: none;
+
+          }
         }
 
         &:hover {
@@ -124,6 +217,10 @@
         margin-right: 5px;
         margin-bottom: 5px;
         margin-top: 5px;
+        @include desktop-block-1400 {
+          padding-top: 7px;
+          padding-bottom: 8px;
+        }
 
         a {
           color: $color-text;
@@ -150,6 +247,83 @@
   }
 }
 
+.select2 {
+  width: 100%;
+  display: none !important;
+  @include phone-1023 {
+    display: block !important;
+  }
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #6D64E2 !important;
+  border: 2px solid #6D64E2 !important;
+  border-radius: 6px !important;
+  height: 51px !important;
+
+
+}
+
+.select2-selection__rendered {
+  font-size: 18px;
+  line-height: 25px !important;
+  font-weight: 500;
+  color: $color-white !important;
+  display: flex !important;
+  height: 100%;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.select2-selection__arrow b {
+  background-image: url(../images/icon/select-arrow.svg);
+  width: 18px !important;
+  height: 11px !important;
+  border: none !important;
+  margin-top: 7px !important;
+  margin-left: -25px !important;
+}
+
+.select2-container--open .select2-selection__arrow b {
+  background: none;
+}
+
+.select2-dropdown {
+
+  border: none !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.select2-results {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  box-shadow: 0px 10px 30px rgba(29, 56, 125, 0.18);
+  background: rgba(109, 100, 226, 0.05);
+}
+
+.select2-results__option {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  background: none !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  color: $color-text !important;
+
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.select2-results__option--highlighted {
+  text-decoration: underline;
+}
+
 .posts-list {
   padding-top: 14px;
   position: relative;
@@ -160,6 +334,10 @@
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
+    @include desktop-block-1400 {
+      margin-left: -8px;
+      margin-right: -8px;
+    }
 
     &:before {
       position: absolute;
@@ -170,6 +348,9 @@
       left: 164px;
       top: 388px;
       z-index: -1;
+      @include desktop-block-1560 {
+        content: none;
+      }
     }
 
     &:after {
@@ -181,6 +362,9 @@
       right: 196px;
       bottom: 475px;
       z-index: -1;
+      @include desktop-block-1560 {
+        content: none;
+      }
     }
 
     li {
@@ -192,10 +376,21 @@
       border-radius: 8px;
       margin-top: 10px;
       margin-bottom: 10px;
+      @include desktop-block-1400 {
+        margin-left: 8px;
+        margin-right: 8px;
+        flex-basis: calc(33.3333333333% - 16px);
+      }
+      @include phone-1023 {
+        flex-basis: 100%;
+      }
 
       img {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        @include phone-1023 {
+          width: 100%;
+        }
       }
 
       .post-list-ul-content {
@@ -225,6 +420,10 @@
             padding-bottom: 6.77px;
             margin-left: 2px;
             margin-right: 2px;
+            @include phone-1023 {
+              font-size: 12px;
+              line-height: 17.4px;
+            }
 
             &:hover {
               span {
@@ -240,6 +439,10 @@
           font-weight: 600;
           margin-bottom: 8px;
           display: block;
+          @include phone-1023 {
+            font-size: 20px;
+            line-height: 28px;
+          }
 
           &:hover {
             text-decoration: underline;
@@ -253,6 +456,9 @@
           line-height: 22px;
           font-weight: 500;
           padding-bottom: 40px;
+          @include phone-1023 {
+            padding-bottom: 16px;
+          }
         }
 
         &-read-date {
@@ -266,6 +472,10 @@
             font-weight: 600;
             font-size: 18px;
             line-height: 25px;
+            @include phone-1023 {
+              font-size: 14px;
+              line-height: 20px;
+            }
 
             &:after {
               position: absolute;
@@ -290,6 +500,10 @@
             font-size: 14px;
             line-height: 20px;
             opacity: 0.8;
+            @include phone-1023 {
+              font-size: 12px;
+              line-height: 17px;
+            }
           }
         }
       }
@@ -320,6 +534,10 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            @include phone-1023 {
+              width: 166px;
+              height: 33px;
+            }
 
             &:after {
               background-image: url(../images/icon/download.svg);
@@ -335,6 +553,9 @@
               font-weight: normal;
               position: relative;
               left: -10px;
+              @include phone-1023 {
+                font-size: 14px;
+              }
             }
 
             &:hover {
@@ -351,6 +572,10 @@
 .breadcrumbs {
   margin-top: 15px;
   margin-bottom: 50px;
+  @include desktop-block-1400 {
+    margin-bottom: 42px;
+  }
+
   &-block {
     display: flex;
     justify-content: center;
@@ -366,6 +591,14 @@
       padding-top: 4px;
       padding-bottom: 4px;
       border-radius: 6px;
+      @include phone-1023 {
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+      }
 
       a {
         font-size: 18px;
@@ -389,10 +622,22 @@
     &-prev {
       background: none !important;
       margin-right: 14px !important;
+      @include phone-1023 {
+
+        padding: 0 !important;
+      }
 
       a {
         &:hover {
           text-decoration: none !important;
+        }
+        img {
+          @include phone-1023 {
+            width: 9px;
+            height: 18px;
+            position: relative;
+            top: 3px;
+          }
         }
       }
     }
@@ -400,10 +645,21 @@
     &-next {
       background: none !important;
       margin-left: 14px !important;
+      @include phone-1023 {
+        padding: 0 !important;
+      }
 
       a {
         &:hover {
           text-decoration: none !important;
+        }
+        img {
+          @include phone-1023 {
+            width: 9px;
+            height: 18px;
+            position: relative;
+            top: 3px;
+          }
         }
       }
     }
@@ -417,17 +673,58 @@
 .featured {
   padding-top: 50px;
   padding-bottom: 50px;
+  @include desktop-block-1400 {
+    padding-top: 42px;
+    padding-bottom: 24px;
+  }
+  @include phone-1023 {
+    padding-bottom: 0;
+  }
+
   &-block {
     display: flex;
     margin-left: -10px;
     margin-right: -10px;
+    flex-wrap: wrap;
+    @include desktop-block-1400 {
+      margin-left: -8px;
+      margin-right: -8px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 15px;
+      padding-bottom: 33px;
+    }
+    @include phone-1023 {
+      margin-left: -5px;
+      margin-right: -5px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 19px;
+      padding-bottom: 0;
+    }
+
 
     li {
       margin-left: 10px;
       margin-right: 10px;
-      flex-basis: calc(16.6666666667% - 10px);
+      flex-basis: calc(16.6666666667% - 20px);
+      @include desktop-block-1400 {
+        margin-left: 8px;
+        margin-right: 8px;
+        flex-basis: calc(16.6666666667% - 16px);
+      }
+      @include phone-1023 {
+        margin-left: 5px;
+        margin-right: 5px;
+        flex-basis: calc(50% - 10px);
+        margin-bottom: 16px;
+      }
+
 
       img {
+        @include phone-1023 {
+          width: 100%;
+        }
 
       }
 
@@ -441,6 +738,16 @@
       font-weight: 600;
       margin-top: 10px;
       margin-bottom: 10px;
+      @include desktop-block-1400 {
+        font-size: 12px;
+        line-height: 17px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      @include phone-1023 {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
 
       &:hover {
         text-decoration: underline;
@@ -453,6 +760,10 @@
       font-size: 18px;
       line-height: 25px;
       color: $color-read-more;
+      @include desktop-block-1400 {
+        font-size: 12px;
+        line-height: 17px;
+      }
 
       &:after {
         position: absolute;
@@ -463,6 +774,12 @@
         top: 9px;
         right: -26px;
         transition: 0.3s;
+        @include desktop-block-1400 {
+          width: 16px;
+          height: 8px;
+          background-size: cover;
+          top: 5px;
+        }
       }
 
       &:hover {
@@ -475,11 +792,35 @@
     }
   }
 }
+
 .subscribe {
   padding-top: 50px;
   position: relative;
   padding-bottom: 50px;
   overflow: hidden;
+  @include desktop-block-1400 {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  @include phone-1023 {
+    padding-top: 14px;
+  }
+  .site-width {
+    @include phone-1023 {
+      padding: 0;
+    }
+
+    .row {
+      @include phone-1023 {
+        margin: 0;
+      }
+      .col {
+        @include phone-1023 {
+          padding: 0;
+        }
+      }
+    }
+  }
   &-block {
     max-width: 954px;
     margin-left: auto;
@@ -490,15 +831,43 @@
     background-color: $back-white;
     z-index: 1;
     position: relative;
+    @include phone-1023 {
+      max-width: 100%;
+      padding: 20px;
+    }
+ .h3 {
+   @include phone-1023 {
+     text-align: center;
+   }
+ }
     &-form {
       margin-top: 10px;
       display: flex;
+      @include desktop-block-1400 {
+        margin-top: 4px;
+      }
+      @include phone-1023 {
+        display: block;
+      }
+
       button {
         width: 205px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         text-align: left;
         padding-left: 50px;
+        @include phone-1023 {
+          width: 204px;
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          height: 40px;
+          margin-top: 16px;
+        }
+
         &:after {
           position: absolute;
           content: '';
@@ -508,22 +877,38 @@
           top: calc(50% - 8px);
           margin-left: 23px;
         }
+
         &:hover {
           opacity: 0.8;
         }
       }
+
       input {
         width: calc(100% - 205px);
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         font-size: 18px;
+        @include desktop-block-1400 {
+          font-size: 16px;
+        }
+        @include phone-1023 {
+          width: 100%;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          font-size: 14px;
+          height: 40px;
+        }
       }
     }
   }
+
   &-block-wrap {
     position: relative;
     max-width: 954px;
     margin: 0 auto;
+    @include phone-1023 {
+      max-width: 100%;
+    }
     &:after {
       position: absolute;
       content: "";
@@ -532,8 +917,12 @@
       height: 25px;
       right: -81px;
       top: -11px;
+      @include desktop-block-1560 {
+        content: none;
+      }
     }
   }
+
   &:before {
     position: absolute;
     content: "";
@@ -542,5 +931,8 @@
     height: 370px;
     left: -45px;
     top: -11px;
+    @include desktop-block-1560 {
+      content: none;
+    }
   }
 }

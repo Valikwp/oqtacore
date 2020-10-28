@@ -1,8 +1,35 @@
+.body-menu-active {
+  overflow: hidden;
+  .header {
+    position: static;
+    .block-logo {
+      img {
+        z-index: 1000;
+        position: relative;
+      }
+    }
+  }
+  .hamburger-icon {
+    display: none !important;
+  }
+  .hamburger-icon-close {
+    display: block !important;
+    cursor: pointer;
+    z-index: 1000;
+    position: relative;
+  }
+}
 .header {
   height: 85px;
   width: 100%;
   background-color: $back-header;
   position: relative;
+  @include desktop-block-1400 {
+    height: 70px;
+  }
+  @include phone-1023 {
+    height: 64px;
+  }
 
   &:after {
     position: absolute;
@@ -13,6 +40,9 @@
     right: 15px;
     top: 0;
     opacity: 0.15;
+    @include desktop-block-1560 {
+      content: none;
+    }
   }
 
 
@@ -20,6 +50,12 @@
     height: 85px;
     display: flex;
     align-items: center;
+    @include desktop-block-1400 {
+      height: 70px;
+    }
+    @include phone-1023 {
+      height: 64px;
+    }
 
     .block-logo {
       position: relative;
@@ -31,22 +67,44 @@
         width: 69px;
         height: 67px;
         left: -120px;
-
+        @include desktop-block-1560 {
+          content: none;
+        }
+      }
+      img {
+        height: 14px;
+        width: auto;
       }
     }
   }
 
-  .header-block-menu {
+  .hamburger-icon {
+    cursor: pointer;
+  }
+  .hamburger-icon-close {
+    display: none;
+  }
+  .header-block-menu  {
     display: flex;
     align-items: center;
+    @include phone-1023 {
+      display: none;
+
+    }
 
     li {
       padding-left: 60px;
+      @include phone-1023 {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding-left: 0;
+      }
 
       a {
         color: $color-white;
         font-size: 18px;
         line-height: 25px;
+
         &:hover {
           text-decoration: underline;
         }
@@ -59,6 +117,19 @@
         font-weight: 600;
       }
     }
+  }
+
+  .header-block-menu-active {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 111;
+    background-color: rgba(11, 9, 73, 0.7);
   }
 
 }

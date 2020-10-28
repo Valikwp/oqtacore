@@ -35,6 +35,7 @@
     "jquery-visible": "^1.2.0",
     "jquery.cookie": "^1.4.1",
     "node-sass": "^4.13.1",
+    "select2": "^4.0.13",
     "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9",
     "webpack-cli": "^3.3.12",
