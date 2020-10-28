@@ -17912,8 +17912,8 @@ __webpack_require__.r(__webpack_exports__);
   select2.select2({
     minimumResultsForSearch: -1
   });
-  select2.on('select2-selecting', function (e) {
-    window.location = e.choice.value;
+  select2.on('select2:selecting', function (e) {
+    window.location = e.params.args.data.id;
   });
 });
 
