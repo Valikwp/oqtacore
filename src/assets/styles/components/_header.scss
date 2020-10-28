@@ -129,7 +129,22 @@
     justify-content: center;
     flex-direction: column;
     z-index: 111;
-    background-color: rgba(11, 9, 73, 0.7);
+
   }
 
+}
+
+.header-block-menu-activ-bg {
+  background-color: rgba(11, 9, 73, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+.body-menu-active  .header-block-menu-activ-bg {
+
+  display: block;
 }
