@@ -341,6 +341,14 @@ input::placeholder {
   opacity: 0.5;
 }
 
+.body-menu-active {
+  overflow: hidden;
+}
+
+.body-menu-active .header {
+  position: static;
+}
+
 .header {
   height: 85px;
   width: 100%;
@@ -445,8 +453,8 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #000;
   z-index: 111;
+  background: #0b0949 none repeat scroll 0% 0%;
 }
 
 .index-header {
