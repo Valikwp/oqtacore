@@ -253,6 +253,12 @@ a {
   }
 }
 
+.page-single .h1 {
+  font-size: 45px;
+  line-height: 63px;
+  text-align: center;
+}
+
 .h2 {
   font-size: 32px;
   line-height: 45px;
@@ -1622,6 +1628,50 @@ input::placeholder {
   .subscribe:before {
     content: none;
   }
+}
+
+.title-block-bottom-wrap {
+  display: flex;
+  max-width: 850px;
+  padding-left: 120px;
+  justify-content: space-between;
+}
+
+.title-block-bottom-author {
+  display: flex;
+  align-items: center;
+}
+
+.title-block-bottom-author-img {
+  width: 168px;
+  height: 168px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.title-block-bottom-author-img img {
+  border-radius: 50%;
+}
+
+.title-block-bottom-author-name-desc {
+  display: block;
+  padding-left: 10px;
+}
+
+.title-block-bottom-author-name-desc-name {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.title-block-bottom-author-name-desc-desc img {
+  width: 24px;
+  height: 24px;
+}
+
+.title-block-bottom-view-read {
+  display: flex;
+  align-items: center;
 }
 
 .footer {
