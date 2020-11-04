@@ -630,6 +630,63 @@ input::placeholder {
   color: #00B496;
 }
 
+.sidebar-consultation {
+  background-image: url(../images/icon/consultation-sidebar.png);
+  width: 467px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sidebar-consultation-name {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-top: 31px;
+}
+
+.sidebar-consultation-desc {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 34px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.sidebar-consultation-text {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+  font-style: italic;
+  padding-top: 10px;
+  padding-left: 30px;
+  max-width: 260px;
+}
+
+.sidebar-consultation-link {
+  position: absolute;
+  bottom: 21px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 600;
+  left: 70px;
+}
+
+.sidebar-consultation-link::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/icon/arrow-4.svg);
+  width: 31px;
+  height: 16px;
+  top: calc(50% - 8px);
+  margin-left: 23px;
+}
+
 .index-header {
   position: relative;
 }
@@ -1976,6 +2033,7 @@ input::placeholder {
 .faq {
   margin-top: 80px;
   padding-left: 120px;
+  margin-bottom: 39px;
 }
 
 .faq .h2 {
@@ -2054,6 +2112,27 @@ input::placeholder {
   padding-bottom: 22px;
   box-shadow: 0px 10px 30px rgba(29, 56, 125, 0.18);
   border-radius: 8px;
+  position: relative;
+  margin-top: 50px;
+  display: inline-block;
+  width: calc(100% - 120px);
+  margin-bottom: 50px;
+}
+
+.rating .h2 {
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 13px;
+}
+
+.rating:after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/icon/rating.svg);
+  width: 97px;
+  height: 149px;
+  right: 66px;
+  top: 21px;
 }
 
 .footer {
