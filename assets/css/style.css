@@ -1115,6 +1115,210 @@ input::placeholder {
   }
 }
 
+.download {
+  box-shadow: 0px 10px 30px rgba(29, 56, 125, 0.18);
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1560px) {
+  .download {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .download {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .download {
+    width: 100%;
+    position: relative;
+    margin-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+  }
+}
+
+.download .h2 {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .download .h2 {
+    font-size: 24px;
+    line-height: 34px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .download .h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.download p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+  .download p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .download p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.download form {
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .download form {
+    padding-top: 0;
+  }
+}
+
+.download form input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1400px) {
+  .download form input {
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .download form input {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.download form input[type="checkbox"] {
+  display: none;
+}
+
+.download form label {
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  padding-left: 31px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .download form label {
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.download form label a {
+  color: #00B496;
+}
+
+.download form label a:hover {
+  text-decoration: underline;
+}
+
+.download form label::after {
+  background-color: #00B496;
+  border: 1px solid #00B496;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+  .download form label::after {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.download form input[type="checkbox"]:checked + label::after {
+  background-image: url(../images/icon/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.download form button {
+  width: 100%;
+  text-align: left;
+  padding-left: 50px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1400px) {
+  .download form button {
+    height: 49px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.download form button:after {
+  background-image: url(../images/icon/download.svg);
+  width: 23px;
+  height: 26px;
+  top: 15px;
+  right: 50px;
+  content: '';
+  position: absolute;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1400px) {
+  .download form button:after {
+    width: 16px;
+    height: 18px;
+    top: 12px;
+  }
+}
+
 .index-header {
   position: relative;
 }
@@ -2454,6 +2658,7 @@ input::placeholder {
 
 .page-single .featured {
   position: relative;
+  width: 100%;
 }
 
 .page-single .featured:before {
@@ -3210,6 +3415,10 @@ input::placeholder {
   position: absolute;
   top: auto;
   bottom: 50px;
+}
+
+.page-single-2 .title-block-bottom-view-read {
+  display: none;
 }
 
 .page-single .footer:after {
