@@ -1,7 +1,18 @@
+.page-single {
+  .footer {
+    &:after {
+      background-image: url(../images/icon/custom-back-18.svg);
+      width: 190px;
+      height: 244px;
+      top: -318px;
+      right: -80px;
+    }
+  }
+}
 .footer {
   margin-top: 50px;
   position: relative;
-  overflow: hidden;
+
   @include desktop-block-1400 {
     margin-top: 40px;
   }

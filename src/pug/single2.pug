@@ -1,0 +1,23 @@
+extends template/main
+
+block variables
+    - var title = 'Oqtracore - blog'
+    - var pageClass = 'page-home'
+    - var description = ''
+block head
+    link(rel="stylesheet" type='text/css' href='assets/css/style.css?ver=' + hash)
+
+block content
+    .page-single.page-single-2#page-single
+        include components/header
+        include components/title
+        .site-width
+            .row.row-content
+                .col.col-content
+                    .content-wrap
+                        include components/single-2
+                .col.col-sidebar
+                    include components/sidebar-2
+                .featured
+        include components/footer
+block script

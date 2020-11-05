@@ -1,0 +1,376 @@
+.sidebar {
+  padding-top: 15px;
+  height: 100%;
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 30px;
+  max-width: 467px;
+
+}
+
+.fixed-end {
+  position: absolute;
+  bottom: 50px;
+
+}
+
+.sidebar-signup {
+  display: none;
+}
+.sidebar-signup.phone-show {
+  @include phone-1023 {
+  display: block;
+  }
+}
+
+.fixed-signup .sidebar-signup {
+  display: block;
+}
+
+.fixed-signup .sidebar-consultation {
+  display: none;
+}
+
+.ez-toc {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/icon/custom-back-17.svg);
+    width: 143px;
+    height: 143px;
+    right: -91px;
+    top: -40px;
+    z-index: -1;
+    @include desktop-block-1560 {
+      content: none;
+    }
+  }
+}
+
+.ez-toc-widget-container {
+  box-shadow: 0px 10px 30px rgba(29, 56, 125, 0.18);
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 30px;
+  background-color: $back-white;
+  @include desktop-block-1560 {
+    margin-bottom: 5px;
+  }
+  @include desktop-block-1400 {
+    padding: 24px;
+  }
+  @include phone-1023 {
+    width: calc(100% + 40px);
+    left: -20px;
+    position: relative;
+    margin-bottom: 9px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 500;
+    padding-bottom: 16px;
+    @include desktop-block-1400 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+  }
+
+  ul {
+    padding-left: 18px;
+
+    li {
+      padding-bottom: 10px;
+      padding-left: 5px;
+      @include desktop-block-1400 {
+        padding-bottom: 8px;
+        padding-left: 0;
+      }
+
+      a {
+        font-size: 16px;
+        line-height: 25px;
+        @include desktop-block-1400 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &.active {
+        font-weight: 600;
+        list-style-type: disc;
+        color: #00B496;
+      }
+    }
+  }
+}
+
+.sidebar-consultation {
+  background-image: url(../images/icon/consultation-sidebar.png);
+  width: 467px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @include desktop-block-1560 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  @include desktop-block-1400 {
+    width: 320px;
+    background-size: cover;
+    height: 208px;
+  }
+  @include phone-1023 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 281px;
+    height: 182px;
+  }
+
+  &-name {
+    font-weight: 600;
+    color: $color-white;
+    font-size: 30px;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-top: 31px;
+    @include desktop-block-1400 {
+      font-size: 18px;
+      line-height: 25px;
+      padding-left: 19px;
+      padding-top: 20px;
+    }
+    @include phone-1023 {
+      padding-left: 17px;
+    }
+  }
+
+  &-desc {
+    color: $color-white;
+    font-size: 24px;
+    line-height: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    @include desktop-block-1400 {
+      font-size: 14px;
+      line-height: 20px;
+      padding-top: 4px;
+      padding-left: 19px;
+    }
+    @include phone-1023 {
+      padding-left: 17px;
+    }
+  }
+
+  &-text {
+    color: $color-white;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    padding-top: 10px;
+    padding-left: 30px;
+    max-width: 260px;
+    @include desktop-block-1400 {
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 19px;
+      max-width: 185px;
+    }
+    @include phone-1023 {
+      font-size: 12px;
+      line-height: 17px;
+      max-width: 160px;
+      padding-left: 17px;
+    }
+  }
+
+  &-link {
+    position: absolute;
+    bottom: 21px;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-white;
+    font-weight: 600;
+    left: 70px;
+    @include desktop-block-1400 {
+      font-size: 14px;
+      line-height: 20px;
+      bottom: 14px;
+
+      left: 50px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../images/icon/arrow-4.svg);
+      width: 31px;
+      height: 16px;
+      top: calc(50% - 8px);
+      margin-left: 23px;
+      transition: 0.3s;
+      @include desktop-block-1400 {
+        width: 25px;
+        background-size: cover;
+        height: 13px;
+        margin-left: 15px;
+        top: calc(50% - 6.5px);
+      }
+    }
+
+    &:hover {
+      &::after {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.sidebar-signup {
+  background-color: $back-signup;
+  box-shadow: 0px 10px 30px rgba(29, 56, 125, 0.18);
+  border-radius: 8px;
+  padding-top: 31px;
+  padding-left: 30px;
+  padding-bottom: 26px;
+  padding-right: 29px;
+  margin-top: 30px;
+  position: relative;
+  @include desktop-block-1560 {
+    margin-top: 5px;
+  }
+  @include desktop-block-1400 {
+    padding-top: 20px;
+    padding-left: 19px;
+    padding-bottom: 24px;
+    padding-right: 19px;
+  }
+  @include phone-1023 {
+
+    margin-top: 20px;
+    width: 281px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/icon/signup-icon.svg);
+    width: 77px;
+    height: 65px;
+    right: 40px;
+    top: 40px;
+    @include desktop-block-1400 {
+      width: 53px;
+      background-size: cover;
+      height: 46px;
+      right: 27px;
+      top: 27px;
+    }
+    @include phone-1023 {
+      right: 23px;
+      top: 23px;
+      width: 46px;
+      height: 40px;
+    }
+
+  }
+
+  &-title {
+    color: $color-white;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 10px;
+    @include desktop-block-1400 {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &-text {
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-white;
+    opacity: 0.6;
+    margin-bottom: 10px;
+    @include desktop-block-1400 {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &-form {
+    margin-top: 10px;
+    display: inline-block;
+
+    input {
+      font-size: 18px;
+      line-height: 25px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      width: calc(100% - 133px);
+      @include desktop-block-1400 {
+        font-size: 14px;
+        line-height: 20px;
+        height: 40px;
+        width: calc(100% - 92px);
+        padding-left: 12px;
+      }
+
+    }
+
+    button {
+      width: 133px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      text-align: left;
+      padding-left: 20px;
+      position: relative;
+      @include desktop-block-1400 {
+        font-size: 14px;
+        line-height: 20px;
+        width: 92px;
+        height: 40px;
+        padding-left: 12px;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url(../images/icon/arrow-4.svg);
+        width: 31px;
+        height: 16px;
+        top: calc(50% - 8px);
+        margin-left: 14px;
+        transition: 0.3s;
+        @include desktop-block-1400 {
+          width: 20px;
+          background-size: cover;
+          height: 10px;
+          top: calc(50% - 5px);
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
