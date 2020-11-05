@@ -685,6 +685,12 @@ input::placeholder {
   background-color: #fff;
 }
 
+@media screen and (max-width: 1560px) {
+  .ez-toc-widget-container {
+    margin-bottom: 5px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .ez-toc-widget-container {
     padding: 24px;
@@ -752,6 +758,13 @@ input::placeholder {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1560px) {
+  .sidebar-consultation {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -871,6 +884,12 @@ input::placeholder {
   padding-right: 29px;
   margin-top: 30px;
   position: relative;
+}
+
+@media screen and (max-width: 1560px) {
+  .sidebar-signup {
+    margin-top: 5px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
