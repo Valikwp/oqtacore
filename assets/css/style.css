@@ -1054,7 +1054,7 @@ input::placeholder {
 
 .sidebar-signup-form {
   margin-top: 10px;
-  display: inline-block;
+  display: flex;
 }
 
 .sidebar-signup-form input {
